@@ -1,4 +1,6 @@
 import streamlit
 
-streamlit.title("Hello")
-
+streamlit.title("Pop's Diner")
+streamlit.header("Menu")
+streamlit.text("Bacon")
+streamlit.text("Millshake")
