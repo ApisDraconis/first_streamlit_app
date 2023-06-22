@@ -52,7 +52,7 @@ def get_fruit_load_list():
         return my_cur.fetchall()
 
 # Main section
-streamlit.header("The fruit load list contains:")
+streamlit.header("View Our Fruit List - Add Your Favourites")
 
 # Add a button to load the fruit
 if streamlit.button('Get Fruit Load List'):
