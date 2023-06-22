@@ -2,8 +2,7 @@ import streamlit
 import pandas
 import requests
 import snowflake.connector
-
-
+import urllib.error import URLError
 
 
 streamlit.title("Pop's Diner")
@@ -46,7 +45,7 @@ streamlit.header("Add a fruit")
 fruit_choice = streamlit.text_input('What fruit would you like to add')
 streamlit.write('The user entered:', fruit_choice)
 
-my_cur.execute(f"INSERT INTO PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST VALUES ('{fruit_choice}')")
+my_cur.execute(f"INSERT INTO PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST VALUES ('from streamlit')")
 my_cnx.commit()
 
 
